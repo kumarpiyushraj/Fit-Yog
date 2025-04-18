@@ -1,0 +1,263 @@
+.packages-section {
+  text-align: center;
+}
+
+.packages-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.package-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.package-card:hover {
+  transform: scale(1.05);
+}
+
+.buy-button {
+  background: #ff6600;
+  color: #fff;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+}
+
+.buy-button:hover {
+  background: #cc5200;
+}
+
+/* Booking Modal */
+.booking-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal Content */
+.modal-content {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+  width: 480px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Modal Title */
+.modal-title {
+  font-size: 25px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  color: #ff6600;
+}
+
+/* Booking Form */
+.booking-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input Fields */
+.booking-form input {
+  width: 70%;
+  padding: 14px;
+  font-size: 17px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Input Focus Effect */
+.booking-form input:focus {
+  border-color: #ff6600;
+  box-shadow: 0px 0px 10px rgba(255, 102, 0, 0.5);
+  outline: none;
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+/* Buttons */
+.confirm-btn,
+.cancel-btn {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Confirm Button */
+.confirm-btn {
+  background: #28a745;
+  color: white;
+}
+
+.confirm-btn:hover {
+  background: #218838;
+  transform: scale(1.05);
+}
+
+/* Cancel Button */
+.cancel-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background: #c82333;
+  transform: scale(1.05);
+}
+
+/* Error Message */
+.error-message {
+  display: flex;
+  justify-content: center;
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: left;
+  width: 100%;
+  font-weight: bold;
+}
+
+.package-price {
+  color: #28a745;
+  font-weight: bolder;
+}
+
+.seat-count {
+  color: #dc3545;
+  font-weight: bolder;
+}
+
+.class-list {
+  border: rgb(233, 233, 233) 2px solid;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+#clstitle {
+  color: #ff6600;
+  text-decoration: underline;
+}
+
+.class-item {
+  text-align: start;
+}
+
+.price-summary {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: #f0f7ff;
+  border: 1px solid #b3d4fc;
+  border-radius: 8px;
+}
+
+.discount-note {
+  color: green;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.receipt-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.receipt-box {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 0 10px #444;
+}
+
+.receipt-box h2 {
+  margin-bottom: 1rem;
+  color: #3b6a9d;
+}
+
+.ok-btn {
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#dislbl {
+  display: block;
+  width: max-content;
+  margin: auto;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 30px;
+  padding: 20px 10px 20px 10px;
+  margin-bottom: 50px;
+  font-weight: bolder;
+}
+
+.seats {
+  color: darkorange;
+  background-color: rgb(224, 224, 224);
+  border: none;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.discnt {
+  color: mediumseagreen;
+  background-color: rgb(224, 224, 224);
+  border: none;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}

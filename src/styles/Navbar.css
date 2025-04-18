@@ -1,0 +1,115 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Section */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img-container {
+  width: 50px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.logo-text-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a,
+.logout-btn {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+
+.nav-links a:hover {
+  color: #0072ff;
+}
+
+.logout-btn {
+  cursor: pointer;
+}
+
+.logout-btn:hover{
+  color: #ff0000;
+}
+
+.auth-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.auth-btn {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.auth-btn:hover {
+  color: #0072ff;
+}
+
+.auth-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.auth-menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  padding: 5px 10px;
+  transition: background 0.3s ease;
+  white-space: nowrap;
+}
+
+.auth-menu a:hover {
+  background: #f0f0f0;
+}
