@@ -6,16 +6,16 @@ Welcome to Fit‑Yoga, a modern full-stack web application for health enthusiast
 
 🛠️ Tech Stack
 
-Frontend
+Frontend:
 React, Framer Motion
 
-Backend 
+Backend:
 Node.js, Express
 
-Database
+Database:
 MongoDB + Mongoose
 
-Auth
+Auth:
 Session-based (express-session)
 
 🎯 Key Features
