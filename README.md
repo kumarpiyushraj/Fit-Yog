@@ -1,70 +1,182 @@
-# Getting Started with Create React App
+🧘‍♀️ Fit‑Yoga: Your Ultimate Wellness Platform 💪
+Welcome to Fit‑Yoga, a modern full-stack web application for health enthusiasts and admins alike! Whether you're here to explore yoga and fitness classes, subscribe to flexible packages, or manage bookings as an admin, this platform brings simplicity, style, and function together.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🔥 Live Preview
+👉 Demo Coming Soon...
 
-## Available Scripts
+🛠️ Tech Stack
 
-In the project directory, you can run:
+Frontend
+React, Framer Motion
 
-### `npm start`
+Backend 
+Node.js, Express
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Database
+MongoDB + Mongoose
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Auth
+Session-based (express-session)
 
-### `npm test`
+🎯 Key Features
+👤 User Experience
+🔐 Secure Sign Up / Log In
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+📚 View available classes with instructor & schedule info
 
-### `npm run build`
+🧾 Choose from curated packages (Basic, Advanced, Premium)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🧘 See included classes per package in real-time
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+📆 Book packages with:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+✅ Live seat tracking
 
-### `npm run eject`
+💰 Auto discounts: 20% (>20 seats), 50% (>50 seats)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🧾 Booking receipt with summary & contact info
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🎬 Browse embedded YouTube videos (Yoga, Fitness)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+💬 Read & write reviews
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+🧑‍💼 Admin Dashboard
+🧩 Sidebar for easy navigation
 
-## Learn More
+📌 View & manage bookings
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+➕ Add new classes
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+📹 Add/delete videos
 
-### Code Splitting
+✂️ View/delete user reviews
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+🚫 Only accessible via role-based session auth
 
-### Analyzing the Bundle Size
+🚀 Getting Started
+📋 Prerequisites
+Node.js v16+
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+MongoDB (local or MongoDB Atlas)
 
-### Making a Progressive Web App
+Git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+📦 Installation
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/fit-yoga-app.git
+cd fit-yoga-app
+Backend
+bash
+Copy
+Edit
+cd backend
+npm install
+Frontend
+bash
+Copy
+Edit
+cd ../frontend
+npm install
+🧾 Environment Setup
+Create a .env file in the backend/ folder:
 
-### Advanced Configuration
+ini
+Copy
+Edit
+MONGO_URI=your_mongodb_connection_string
+SESSION_SECRET=your_session_secret
+PORT=5000
+🏁 Run the App
+Start the backend:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+bash
+Copy
+Edit
+cd backend
+node server.js
+Start the frontend:
 
-### Deployment
+bash
+Copy
+Edit
+cd ../frontend
+npm start
+📍 Visit: http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+🧱 Project Structure
+pgsql
+Copy
+Edit
+fit-yoga-app/
+├── backend/
+│   ├── models/        → Mongoose schemas
+│   ├── server.js      → Express routes & middleware
+│   └── .env
+├── frontend/
+│   ├── src/
+│   │   ├── components/ → Navbar, Footer, UI Elements
+│   │   ├── pages/      → Home, Classes, Packages, Admin Dashboard
+│   │   └── App.js      → Route definitions
+👣 How It Works
+👥 User Flow
+Register/Login
 
-### `npm run build` fails to minify
+Explore classes & packages
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Book a package:
+
+Enter seats & contact number
+
+See dynamic discount & price
+
+Confirm or cancel booking
+
+Get receipt 🎟️
+
+View your bookings via “My Bookings” tab
+
+🧑‍💻 Admin Flow
+Log in with admin credentials
+
+Access dashboard:
+
+✅ View/Cancel Bookings
+
+➕ Add Classes & Videos
+
+✂️ Manage Reviews
+
+All admin routes are protected via user.role === 'admin'
+
+🔌 API Overview
+
+Method	Endpoint	Description
+POST	/api/register	Register a new user
+POST	/api/login	Login a user
+GET	/api/currentUser	Get current session user
+GET	/api/classes	Fetch all classes
+GET	/api/packages	Fetch all packages
+POST	/api/bookings	Create a booking
+GET	/api/userbookings	Get current user's bookings
+GET	/api/admin/bookings	Admin: All bookings
+POST	/api/admin/classes	Admin: Add a class
+POST	/api/admin/videos	Admin: Add a video
+DELETE	/api/bookings/:id	Cancel a booking
+GET/POST/DELETE	/api/admin/reviews	Admin: Manage reviews
+📸 Screenshots
+(Add screenshots here for: Homepage, Packages page, Booking modal, Admin dashboard, etc.)
+
+🤝 Contributing
+We welcome contributions!
+
+Fork the repo
+
+Create your branch (git checkout -b feature/your-feature)
+
+Commit changes (git commit -am 'Add something cool')
+
+Push (git push origin feature/your-feature)
+
+Open a Pull Request 🎉
