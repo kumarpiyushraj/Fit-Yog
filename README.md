@@ -1,5 +1,5 @@
-🧘‍♀️ Fit‑Yoga: Your Ultimate Wellness Platform 💪
-Welcome to Fit‑Yoga, a modern full-stack web application for health enthusiasts and admins alike! Whether you're here to explore yoga and fitness classes, subscribe to flexible packages, or manage bookings as an admin, this platform brings simplicity, style, and function together.
+🧘‍♀️ Fit‑Yog: Your Ultimate Wellness Platform 💪
+Welcome to Fit‑Yog, a modern full-stack web application for health enthusiasts and admins alike! Whether you're here to explore yoga and fitness classes, subscribe to flexible packages, or manage bookings as an admin, this platform brings simplicity, style, and function together.
 
 🔥 Live Preview
 👉 Demo Coming Soon...
