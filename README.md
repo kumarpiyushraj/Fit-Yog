@@ -483,4 +483,8 @@ This project was developed as part of **PMCA601L – Full Stack Web Development*
 
 ⭐ Star this repository if you found it helpful!
 
+<p align="center">
+  <sub>© 2025 Kumar Piyush Raj. All rights reserved.</sub>
+</p>
+
 </div>
