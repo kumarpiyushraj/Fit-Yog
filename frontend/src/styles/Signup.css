@@ -1,0 +1,113 @@
+.signup-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Signup Box */
+.signup-box {
+  width: 100%;
+  max-width: 420px;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Signup Title */
+.signup-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0077b6;
+  margin-bottom: 5px;
+}
+
+/* Subtitle */
+.signup-subtitle {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Input Group */
+.input-group {
+  text-align: left;
+  margin-bottom: 15px;
+  max-width: 400px;
+}
+
+.input-group label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border 0.3s ease-in-out;
+}
+
+.input-group input:focus {
+  border-color: #0077b6;
+  outline: none;
+}
+
+/* Signup Button */
+.signup-btn {
+  width: 100%;
+  padding: 12px;
+  background: #0077b6;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.signup-btn:hover {
+  background: #005f99;
+}
+
+/* Success/Error Message */
+.signup-message {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #d32f2f;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .signup-box {
+    max-width: 90%;
+    padding: 20px;
+  }
+  .signup-title {
+    font-size: 1.8rem;
+  }
+  .signup-btn {
+    font-size: 1rem;
+  }
+}

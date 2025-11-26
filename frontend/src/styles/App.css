@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding-top: 5px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.container {
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px auto;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

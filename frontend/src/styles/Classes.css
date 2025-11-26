@@ -1,0 +1,64 @@
+.classes-section {
+  max-width: 1300px;
+  text-align: center;
+}
+
+.class-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.class-card {
+  width: 340px;
+  background: linear-gradient(135deg, #ffffff, #f0f8ff);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.class-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.class-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffbb00;
+  margin-bottom: 10px;
+}
+
+.class-description {
+  font-size: 1rem;
+  color: #63a955;
+  font-style: italic;
+  text-align: justify;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.class-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 1rem;
+  color: #333;
+  text-align: left;
+  width: 100%;
+}
+
+.class-details strong {
+  font-weight: bold;
+  color: #444;
+}
+
+.class-details p {
+  margin: 5px 0;
+}
